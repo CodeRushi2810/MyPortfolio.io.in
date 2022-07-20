@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de2f58a562.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Play&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+
+    <div class="loader">
+        <div id="wrapperload">
+            <div class="elem">
+                <h1 id="loader-logo">Rushi Patel</h1>
+            </div>
+            <div class="elem">
+                <h3>Web-Developer</h3>
+            </div>
+            <div class="elem">
+                <h3>UI/UX Designer</h3>
+            </div>
+            <div class="elem">
+                <h1 id="loader-logo2">Rushi Patel</h1>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <nav class="navbar">
+            <p class="logo navitem"><span class="span">R</span>.PATEL</p>
+            
+            <ul id="sidemenu">
+                <li class="navitem"><a href="#header">Home</a></li>
+                <li class="navitem"><a href="#about">About</a></li>
+                <li class="navitem"><a href="#services">Services</a></li>
+                <li class="navitem"><a href="#portfolio">Portfolio</a></li>
+                <li class="navitem"><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="container">
+
+            <div class="header-text">
+                <p class="leftitem">Front-End Web Developer</p>
+                <h1 class="leftitem">Hi, I am <span>Rushi</span> <br/> Patel </h1>
+            </div>
+        </div>
+    </div>
+<!-- ................................About.................... -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/newBG.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey Guys!!! I am a flexible person seeking employment which will allow development, growth and make use of my existing skills. I am willing to learn new skills and have many existing ones to offer.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web Application Development</li>
+                            <li><span>UI / UX</span><br>Designing Web / App Interfaces</li>
+                            <li><span>App Design</span><br>Designing Android / IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Enlighten InfoSystems</span><br>Internship in C & C++</li>
+                            <li><span>BrainyBeems</span><br>Internship in PHP</li>
+                            <li><span>Youtube - Courses</span><br>Expert in HTML / CSS / JS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sardar VallabhBhai Patel Institute Of Technology - 2023</span><br>Pursuing Bachelor's degree in Information Technology</li>
+                            <li><span>Parul Institute of Engineering and Technology -2020</span><br>Diploma in Mechanical Engineering</li>
+                            <li><span>The Mother's School - 2016</span><br>Schooling from nursery to 10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ................................Services.................... -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Design and establish dynamic and responsive user-friendly websites</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Create initial web concepts using low to high fidelity designs and wireframes, integrating user-centered design and technology</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Design the next generation of mobile websites, apps and other mobile interfaces across multiple platforms such as iOS, Android, Windows, and mobile web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ................................Portfolio.................... -->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/work-1.png" alt="work 1">
+                <div class="layer">
+                    <h3>Spiritually</h3>
+                    <p>The app brings yoga and meditation on your hands. Go get some yoga therapy from experts.</p>
+                    <a href="https://coderushi2810.github.io/Spiritually.io.in/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work-2.png" alt="work 1">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Yet to Launch</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work-3.png" alt="work 1">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Yet to Launch</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ................................Contact.................... -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i><a class="call-link" href = "mailto: patelrushi2810@gmail.com">patelrushi2810@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i><a class="call-link" href="tel:910-683-7631">+91 9106837631</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rushi-patel-064787209" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/rushipatel_2810/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="./images/Resume WebDeveloper.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <span id="msg"></span>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <p>Copyright &copy;Made with love <i class="fa-solid fa-heart"></i> by Rushi Patel</p>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<script src="script.js"></script>
+</html>

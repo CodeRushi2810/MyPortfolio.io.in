@@ -8,10 +8,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function () {
-                msg.innerHTML = "";
-            }, 5000);
+                Swal.fire("Sent", "Thanks for connecting!", "success");
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
